@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.4.0",
-    "date-fns": "^2.0.0-alpha.11",
+    "date-fns": "2.25.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "marked": "^0.4.0",
