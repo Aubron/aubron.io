@@ -9,10 +9,11 @@ interface TechnologyChipsProps {
 }
 
 const TechnologyChips: React.FC<TechnologyChipsProps> = ({ technologies }) => (
-  <div className="flex gap-1">
+  <div className="flex gap-1 flex-wrap">
     {technologies.map(technology => (
       <Chip
         variant="flat"
+        className="text-xs"
         key={technology}
         avatar={<Avatar name={technology} src={`/${technology}.svg`} />}
       >

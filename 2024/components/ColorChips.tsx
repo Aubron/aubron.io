@@ -7,7 +7,7 @@ interface ColorChipsProps {
 }
 
 const ColorChips: React.FC<ColorChipsProps> = ({ colors }) => (
-  <div className="flex gap-2">
+  <div className="flex gap-2 mb-2">
     {colors.map(color => (
       <Tooltip key={color} content={color} placement="bottom">
         <div
