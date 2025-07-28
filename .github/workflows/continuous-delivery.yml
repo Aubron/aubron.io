@@ -11,13 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - uses: chrislennon/action-aws-cli@v1.1
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: global add @angular/cli
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: --cwd angular install
-      - uses: borales/actions-yarn@v2.0.0
+      - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: --cwd angular build:ci
       - run: aws s3 sync --delete ./angular/dist/angular s3://aubronwood.com
